@@ -18,21 +18,23 @@ pipeline {
     }
 
     stages {
-        stage('Git Clone') {
+    /*
+        stage('Clone') {
             when {
                 environment name: 'run_test_only', value: 'no'
             }
             steps{
-            echo "${node}"
+            git credentialsId: '25ed919a-c9e6-473f-afaf-d6147d1a5c32', url: 'https://github.com/cucumber/cucumber-java-skeleton.git'
             }
         }
+        */
 
-        stage('Configure environment'){
+        stage('Test'){
             when {
                 environment name: 'run_test_only', value: 'no'
             }
             steps{
-            echo "${node}"
+                sh 'mvn test'
             }
         }
 
