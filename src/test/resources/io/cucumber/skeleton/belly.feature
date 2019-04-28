@@ -1,3 +1,4 @@
+@master
 Feature: Belly
 
   Scenario: a few cukes

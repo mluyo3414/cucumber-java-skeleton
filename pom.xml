@@ -9,10 +9,9 @@
     <name>Cucumber-Java Skeleton</name>
 
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
         <junit.version>4.12</junit.version>
-        <cucumber.version>2.3.1</cucumber.version>
-        <cucumber.pro.version>2.0.4</cucumber.pro.version>
+        <cucumber.version>4.2.0</cucumber.version>
         <maven.compiler.version>3.3</maven.compiler.version>
     </properties>
 
@@ -28,20 +27,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>pro-plugin</artifactId>
-            <version>${cucumber.pro.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
